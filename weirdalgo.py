@@ -5,6 +5,6 @@ while(a!=1):
             a=a*3+1
       else:
             a=a/2
-print(int(a))
+print(int(a)) 
       
       
