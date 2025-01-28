@@ -1,11 +1,10 @@
 n, x = map(int, input().strip().split())
 a = list(map(int, input().strip().split()))[:n]
-
 def minc():
     dp = [1e9] * (x + 1)
-    dp[0] = 0  # Base case: no coins needed to make sum 0
+    dp[0] = 0 
     
-    for coin in a:  # Iterate through each coin
+    for coin in a:
         for i in range(coin, x + 1):
             dp[i] = min(dp[i], dp[i - coin] + 1)
     
